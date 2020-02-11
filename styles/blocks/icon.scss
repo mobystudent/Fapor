@@ -1,0 +1,25 @@
+.icon {
+    position: relative;
+
+    &--facebook {
+        width: 9px;
+        height: 18px;
+        fill: $white;
+    }
+
+    &--twitter {
+        height: 12px;
+        width: 15px;
+        fill: $white;
+
+        // &:hover {
+        //     fill="#03a9f4"
+        // }
+    }
+
+    &--google {
+        height: 14px;
+        width: 21px;
+        fill: $white;
+    }
+}

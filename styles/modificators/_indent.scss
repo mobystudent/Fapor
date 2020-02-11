@@ -1,3 +1,13 @@
-// .indent {
-//
-// }
+.indent {
+    &--page-title {
+        margin-bottom: 149px;
+    }
+
+    &--section-title {
+        margin-bottom: 60px;
+    }
+
+    &--manag {
+        margin-bottom: 38px;
+    }
+}

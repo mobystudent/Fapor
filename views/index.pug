@@ -8,8 +8,40 @@ block content
       include includes/header.pug
          
       main.content
-         article.title-page.bg--title-sec
+         article.title-page.bg--title-sec.indent--page-title
             section.container.container--wide.margin--c
                section.title-page__wrap
                   h1.title-page__title.font--raleway-b.font--upper.color--white.title--large.ls--015em More About US
                   p.title-page__subtitle.font--open-sans-r.color--white.text--small.ls--025em We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.
+
+         article.management
+            section.container.container--narrow.margin--c
+               h2.section-title.font--raleway-sb.font--upper.color--dark-blue.title--medium.align--c.ls--m-005em.position--r.indent--section-title Management
+               
+               section.management__items.display--fl.fl--just-b.indent--manag
+                  
+                  - const arrNames = ['Courteney Cox', 'Matt LeBlanc', 'David Schwimmer'];
+                  - const arrPositions = ['Marketing Manager', 'Finance Manager', 'Creative Director'];
+                  
+                  - for(let i = 0; i < arrNames.length; i++)
+                  
+                     article.item
+                        figure.image.image--item
+                           img.image__item(src=`../img/man-${i+1}.jpg` alt=`man-${i+1}`)
+                        section.item__data.display--fl.fl--align-c.fl--just-b
+                           section.item__info.display--fl.fl--col-nowr
+                              span.item__name.text--medium.color--near-black.font--raleway-m.font--upper=arrNames[i]
+                              span.item__position.color--dim-gold.font--open-sans-r.text--small=arrPositions[i]
+                           section.item__social.display--fl.fl--align-c
+                              figure.wrap.wrap--icon-item.wrap--icon-fb.display--fl.fl--align-c.fl--just-c
+                                 svg.icon.icon--facebook
+                                    use(xlink:href="#facebook")
+                              figure.wrap.wrap--icon-item.display--fl.fl--align-c.fl--just-c
+                                 svg.icon.icon--twitter
+                                    use(xlink:href="#twitter")
+                              figure.wrap.wrap--icon-item.display--fl.fl--align-c.fl--just-c
+                                 svg.icon.icon--google
+                                    use(xlink:href="#google")
+                                       
+               section.wrap.wrap--btn-manag
+                  a.btn.btn--manag.color--dark-blue.font--upper.font--open-sans-r.text--medium.border--dark-blue.border--rad-25.align--c.margin--c.ls--005em(href="#") Show All

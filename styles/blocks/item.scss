@@ -1,0 +1,11 @@
+.item {
+    width: 311px;
+
+    &:nth-child(2) {
+        margin-left: 12px;
+    }
+
+    &__data {
+        padding: 0 8px 0 12px;
+    }
+}

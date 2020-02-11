@@ -1,5 +1,9 @@
 .border {
-    &--rad-50% {
-        border-radius: 50%;
+    &--dark-blue {
+        border: 1px solid $darkBlue;
+    }
+
+    &--rad-25 {
+        border-radius: 25px;
     }
 }

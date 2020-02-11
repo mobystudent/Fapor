@@ -1,0 +1,12 @@
+.section-title {
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -26px;
+        height: 2px;
+        width: 79px;
+        transform: translateX(-50%);
+        background: $dimGold;
+    }
+}
