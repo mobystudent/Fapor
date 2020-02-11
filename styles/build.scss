@@ -1,0 +1,29 @@
+//Variables
+@import "variables/colors.scss";
+
+//Font
+@import "modificators/_font.scss";
+
+//Defaults
+@import "common/default.scss";
+
+//Modificators
+@import "modificators/_display.scss";
+@import "modificators/_fl.scss";
+@import "modificators/_colors.scss";
+@import "modificators/_ls.scss";
+@import "modificators/_border.scss";
+@import "modificators/_position.scss";
+@import "modificators/_indent.scss";
+@import "modificators/_align.scss";
+@import "modificators/_bg.scss";
+
+//Text
+@import "modificators/_text.scss";
+@import "modificators/_title.scss";
+
+//Blocks
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/container.scss";
+@import "blocks/title-page.scss";

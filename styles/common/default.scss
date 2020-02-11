@@ -1,0 +1,23 @@
+body {
+    max-width: 1920px;
+    width: 1902px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100vh;
+    height: 100%;
+}
+
+.margin {
+    &--c {
+        margin: 0 auto;
+    }
+}
+
+.cursor {
+    &--pointer {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,15 @@
+header.header.bg--header
+   section.header__content.display--fl.fl--just-b.margin--c
+      a.logo.logo--nav.display--fl.fl--align-c(href="/")
+         img.img.img--logo(src="../img/logo.jpg" alt="logo")
+      nav.nav.display--fl
+         ul.nav__list.display--fl.fl--align-c
+            
+            - const menu = ['Home', 'About', 'service', 'portfolio', 'contact']
+            - for (let i = 0; i < menu.length; i++)
+                  li.nav__li
+                     
+                     - if(i == 1)
+                        a.nav__link.nav__link--active.font--open-sans-r.font--upper.color--white.text--small.ls--005em.position--r(href="#")=menu[i]
+                     - else
+                        a.nav__link.font--open-sans-r.font--upper.color--white.text--small.ls--005em.position--r(href="#")=menu[i]

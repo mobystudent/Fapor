@@ -1,0 +1,13 @@
+.position {
+    &--r {
+        position: relative;
+    }
+
+    &--a {
+        position: absolute;
+    }
+
+    &--f {
+        position: fixed;
+    }
+}

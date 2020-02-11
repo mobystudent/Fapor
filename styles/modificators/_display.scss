@@ -1,0 +1,17 @@
+.display {
+    &--fl {
+        display: flex;
+    }
+
+    &--n {
+        display: none;
+    }
+
+    &--bl {
+        display: block;
+    }
+
+    &--in-bl {
+        display: inline-block;
+    }
+}
