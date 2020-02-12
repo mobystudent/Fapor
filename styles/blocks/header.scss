@@ -1,8 +1,17 @@
 .header {
     padding: 25px 0 26px;
 
+    @media screen and (max-width: 1365px) {
+        padding: 20px 0;
+    }
+
     &__content {
         max-width: 1426px;
         padding-left: 35px;
+
+        @media screen and (max-width: 1599px) {
+            max-width: 1306px;
+            padding: 0 30px;
+        }
     }
 }

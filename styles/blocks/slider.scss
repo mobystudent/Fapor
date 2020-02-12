@@ -1,9 +1,18 @@
 .slider {
     padding-top: 30px;
 
+    @media screen and (max-width: 1365px) {
+        padding-top: 25px;
+    }
+
     &__descrip {
         max-width: 870px;
         margin-bottom: 36px;
+
+        @media screen and (max-width: 1365px) {
+            max-width: 720px;
+            margin-bottom: 30px;
+        }
     }
 
     &__name {

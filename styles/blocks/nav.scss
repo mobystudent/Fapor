@@ -2,12 +2,18 @@
     &__li {
         margin-right: 65px;
 
+        @media screen and (max-width: 1365px) {
+            margin-right: 55px;
+        }
+
         &:last-child {
             margin-right: 0;
         }
     }
 
     &__link {
+        transition: color .25s ease-in;
+
         &--active {
             &:before {
                 content: '';
@@ -18,7 +24,15 @@
                 width: 79px;
                 transform: translateX(-50%);
                 background: $dimGold;
+
+                @media screen and (max-width: 1365px) {
+                    bottom: -32px;
+                }
             }
+        }
+
+        &:hover {
+            color: $dimGold;
         }
     }
 }

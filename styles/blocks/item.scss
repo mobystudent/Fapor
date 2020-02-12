@@ -1,6 +1,10 @@
 .item {
     width: 311px;
 
+    @media screen and (max-width: 1365px) {
+        width: 280px;
+    }
+
     &:nth-child(2) {
         margin-left: 12px;
     }

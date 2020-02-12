@@ -2,6 +2,17 @@
     &--manag {
         max-width: 164px;
         padding: 13px 25px;
+        transition: background .35s ease-in, color .35s ease-in;
+
+        @media screen and (max-width: 1365px) {
+            max-width: 140px;
+            padding: 11px 22px;
+        }
+
+        &:hover {
+            background: $darkBlue;
+            color: $white;
+        }
     }
 
     &--icon {
@@ -16,22 +27,9 @@
                 margin-right: 0;
             }
 
-            &:hover {
-                .icon {
-                    transition: fill .5s ease-in;
-
-                    &--facebook {
-                        fill: $deepBlue;
-                    }
-
-                    &--twitter {
-                        fill: $turquoise;
-                    }
-
-                    &--google {
-                        fill: $dimRed;
-                    }
-                }
+            @media screen and (max-width: 1365px) {
+                width: 30px;
+                height: 30px;
             }
         }
 
@@ -52,6 +50,24 @@
 
         &-ball {
             background: $dimGold;
+        }
+
+        &:hover {
+            .icon {
+                transition: fill .5s ease-in;
+
+                &--facebook {
+                    fill: $deepBlue;
+                }
+
+                &--twitter {
+                    fill: $turquoise;
+                }
+
+                &--google {
+                    fill: $dimRed;
+                }
+            }
         }
     }
 

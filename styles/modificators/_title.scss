@@ -1,9 +1,17 @@
 .title {
     &--large {
         font-size: 40px;
+
+        @media screen and (max-width: 1365px) {
+            font-size: 36px;
+        }
     }
 
     &--medium {
         font-size: 24px;
+
+        @media screen and (max-width: 1365px) {
+            font-size: 22px;
+        }
     }
 }

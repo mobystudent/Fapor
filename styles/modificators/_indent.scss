@@ -1,10 +1,18 @@
 .indent {
     &--page-title {
         margin-bottom: 149px;
+
+        @media screen and (max-width: 1365px) {
+            margin-bottom: 120px;
+        }
     }
 
     &--sec-title {
         margin-bottom: 60px;
+
+        @media screen and (max-width: 1365px) {
+            margin-bottom: 50px;
+        }
 
         &-review {
             margin-right: 6px;

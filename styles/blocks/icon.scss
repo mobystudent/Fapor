@@ -5,18 +5,33 @@
         width: 9px;
         height: 18px;
         fill: $white;
+
+        @media screen and (max-width: 1365px) {
+            width: 7px;
+            height: 14px;
+        }
     }
 
     &--twitter {
         height: 12px;
         width: 15px;
         fill: $white;
+
+        @media screen and (max-width: 1365px) {
+            height: 10px;
+            width: 13px;
+        }
     }
 
     &--google {
         height: 14px;
         width: 21px;
         fill: $white;
+
+        @media screen and (max-width: 1365px) {
+            height: 12px;
+            width: 18px;
+        }
     }
 
     &--arrow {
