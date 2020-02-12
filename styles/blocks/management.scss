@@ -1,3 +1,15 @@
 .management {
     padding-bottom: 31px;
+
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 25px;
+    }
+
+    &__items {
+        @media screen and (max-width: 579px) {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+    }
 }

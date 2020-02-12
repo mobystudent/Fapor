@@ -6,5 +6,16 @@
         letter-spacing: .05em;
         @include placeholder(14px, $cloudyGray);
         margin-bottom: 13px;
+
+        @media screen and (max-width: 1023px) {
+            @include placeholder(13px, $cloudyGray);
+            padding: 10px 12px;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding: 8px 10px;
+            @include placeholder(12px, $cloudyGray);
+        }
     }
 }

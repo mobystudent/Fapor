@@ -5,6 +5,10 @@
         @media screen and (max-width: 1365px) {
              font-size: 14px;
         }
+
+        @media screen and (max-width: 767px) {
+            font-size: 13px;
+        }
     }
 
     &--small {
@@ -16,11 +20,27 @@
             line-height: 22px;
         }
 
+        @media screen and (max-width: 1023px) {
+            line-height: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            line-height: 18px;
+        }
+
         &-ft {
             line-height: 22px;
 
             @media screen and (max-width: 1365px) {
                 line-height: 20px;
+            }
+
+            @media screen and (max-width: 1023px) {
+                line-height: 18px;
+            }
+
+            @media screen and (max-width: 767px) {
+                line-height: 16px;
             }
         }
     }

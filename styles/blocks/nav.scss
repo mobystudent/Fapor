@@ -1,9 +1,21 @@
 .nav {
+    @media screen and (max-width: 579px) {
+        display: none;
+    }
+    
     &__li {
         margin-right: 65px;
 
         @media screen and (max-width: 1365px) {
             margin-right: 55px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            margin-right: 45px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin-right: 25px;
         }
 
         &:last-child {
@@ -27,6 +39,10 @@
 
                 @media screen and (max-width: 1365px) {
                     bottom: -32px;
+                }
+
+                @media screen and (max-width: 1023px) {
+                    bottom: -22px;
                 }
             }
         }

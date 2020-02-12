@@ -5,6 +5,14 @@
         padding-top: 25px;
     }
 
+    @media screen and (max-width: 1023px) {
+        padding-top: 15px;
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+    }
+
     &__descrip {
         max-width: 870px;
         margin-bottom: 36px;
@@ -13,16 +21,39 @@
             max-width: 720px;
             margin-bottom: 30px;
         }
+
+        @media screen and (max-width: 1023px) {
+            max-width: 580px;
+            margin-bottom: 25px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: 480px;
+            margin-bottom: 20px;
+        }
+
+        @media screen and (max-width: 579px) {
+            width: 80%;
+        }
     }
 
     &__name {
         margin-bottom: 6px;
+
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 3px;
+        }
     }
 
     &__control {
         width: 100%;
         top: 90px;
         left: 0;
+
+        @media screen and (max-width: 767px) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     &__arrow {

@@ -1,9 +1,19 @@
 .copyright {
     padding-bottom: 4px;
-    
+
+    @media screen and (max-width: 579px) {
+        padding-left: 0;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
     &__text {
         &--copy {
             padding-right: 4px;
+
+            @media screen and (max-width: 579px) {
+                padding-right: 0;
+            }
         }
     }
 }

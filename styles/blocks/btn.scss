@@ -9,6 +9,16 @@
             padding: 11px 22px;
         }
 
+        @media screen and (max-width: 1023px) {
+            max-width: 130px;
+            padding: 10px 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            max-width: 120px;
+            padding: 8px 15px;
+        }
+
         &:hover {
             background: $darkBlue;
             color: $white;
@@ -16,28 +26,35 @@
     }
 
     &--icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+
+        @media screen and (max-width: 1365px) {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            width: 26px;
+            height: 26px;
+        }
+
         &-item {
-            width: 34px;
-            height: 34px;
             background: $lightGray;
-            border-radius: 50%;
             margin-right: 6px;
 
             &:last-child {
                 margin-right: 0;
             }
-
-            @media screen and (max-width: 1365px) {
-                width: 30px;
-                height: 30px;
-            }
         }
 
         &-footer {
-            border-radius: 50%;
-            width: 34px;
-            height: 34px;
             margin-right: 11px;
+
+            @media screen and (max-width: 1023px) {
+                margin-right: 9px;
+            }
 
             &:last-child {
                 margin-right: 0;
@@ -75,5 +92,14 @@
         width: 100%;
         background: $dimGold;
         padding: 7px 43px 7px 50px;
+    }
+
+    &--menu {
+        display: none;
+
+        @media screen and (max-width: 579px) {
+            display: flex;
+            align-items: center;
+        }
     }
 }

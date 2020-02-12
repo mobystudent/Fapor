@@ -5,11 +5,41 @@
         width: 280px;
     }
 
+    @media screen and (max-width: 1023px) {
+        width: 220px;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 180px;
+    }
+
+    @media screen and (max-width: 579px) {
+        width: 220px;
+        margin-bottom: 20px;
+    }
+
     &:nth-child(2) {
         margin-left: 12px;
+
+        @media screen and (max-width: 1365px) {
+            margin-left: 0;
+        }
     }
 
     &__data {
         padding: 0 8px 0 12px;
+        align-items: center;
+
+        @media screen and (max-width: 1023px) {
+            padding: 0 5px;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+        }
+    }
+
+    &__info {
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 10px;
+        }
     }
 }

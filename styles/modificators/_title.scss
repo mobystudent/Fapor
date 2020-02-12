@@ -5,6 +5,14 @@
         @media screen and (max-width: 1365px) {
             font-size: 36px;
         }
+
+        @media screen and (max-width: 1023px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+        }
     }
 
     &--medium {
@@ -12,6 +20,14 @@
 
         @media screen and (max-width: 1365px) {
             font-size: 22px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
         }
     }
 }
