@@ -7,6 +7,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
+const concat = require('gulp-concat');
 
 gulp.task('views', () => {
     return gulp.src('views/*.pug')
@@ -19,7 +20,10 @@ gulp.task('views', () => {
 });
 
 gulp.task('styles', () => {
-    return gulp.src('styles/*.scss')
+    return gulp.src([
+                'styles/reset.scss',
+                'styles/build.scss'
+         ])
         .pipe(sourcemaps.init())
         .pipe(sass(
             {outputStyle: 'compressed'}
@@ -27,6 +31,7 @@ gulp.task('styles', () => {
         .pipe(autoprefixer({
             overrideBrowserslist: ['> 0.5%, last 4 versions, Firefox ESR, ios_saf 4, Firefox >= 20, ie 6-11, iOS >=7']
         }))
+        .pipe(concat('build.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build/css'))
 });
@@ -39,6 +44,17 @@ gulp.task('images', () => {
         .pipe(gulp.dest('build/img'))
 });
 
+gulp.task('script', () => {
+    return gulp.src([
+                'js/slick.min.js',
+                'js/script.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('script.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('watch', () => {
     browserSync.init({
         server: "./build"
@@ -47,6 +63,7 @@ gulp.task('watch', () => {
     gulp.watch('imgs/**', gulp.series('images'));
     gulp.watch('styles/**/*.scss', gulp.series('styles'));
     gulp.watch('views/**/*.pug', gulp.series('views'));
+    gulp.watch('js/**/*.js', gulp.series('script'));
 });
 
-gulp.task('build', gulp.series(gulp.parallel('images','styles', 'views'), 'watch'));
+gulp.task('build', gulp.series(gulp.parallel('images','styles', 'views', 'script'), 'watch'));

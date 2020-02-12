@@ -51,13 +51,17 @@ block content
                h2.section-title.font--raleway-sb.font--upper.color--dark-blue.title--medium.align--c.ls--m-005em.position--r.indent--sec-title.indent--sec-title-review WHAT OUR CLIENTS SAY
                
                article.slider.position--r
-                  section.slider__item.display--fl.fl--align-c.fl--col-nowr
-                     figure.image.image--review.display--fl.fl--align-c.fl--just-c.border--circle
-                        img.image__item(src="../img/client.png" alt="client")
-                     p.slider__descrip.color--black.font--open-sans-l.text--small.ls--005em.align--c Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
-                     section.slider__data.display--fl.fl--align-c.fl--col-nowr
-                        span.slider__name.font--open-sans-sb.text--medium.color--dim-gold.font--upper.ls--005em Larry Jane
-                        span.slidet__position.font--open-sans-r.color--black.ls--005em.text--small General Manager
+                  section.slider__content
+                     
+                     - for (let i = 0; i < 3; i++)
+                     
+                        section.slider__item.display--fl.fl--align-c.fl--col-nowr
+                           figure.image.image--review.display--fl.fl--align-c.fl--just-c.border--circle
+                              img.image__item(src="../img/client.png" alt="client")
+                           p.slider__descrip.color--black.font--open-sans-l.text--small.ls--005em.align--c Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.
+                           section.slider__data.display--fl.fl--align-c.fl--col-nowr
+                              span.slider__name.font--open-sans-sb.text--medium.color--dim-gold.font--upper.ls--005em Larry Jane
+                              span.slidet__position.font--open-sans-r.color--black.ls--005em.text--small General Manager
                   section.slider__control.position--a.display--fl.fl--just-b
                      span.slider__arrow.slider__arrow--prev.display--fl.cursor--pointer
                         svg.icon.icon--arrow
