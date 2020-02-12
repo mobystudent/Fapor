@@ -1,0 +1,24 @@
+.slider {
+    padding-top: 30px;
+
+    &__descrip {
+        max-width: 870px;
+        margin-bottom: 36px;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+    }
+
+    &__control {
+        width: 100%;
+        top: 90px;
+        left: 0;
+    }
+
+    &__arrow {
+        &--prev {
+            transform: rotate(180deg);
+        }
+    }
+}
