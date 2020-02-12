@@ -3,4 +3,61 @@
         max-width: 164px;
         padding: 13px 25px;
     }
+
+    &--icon {
+        &-item {
+            width: 34px;
+            height: 34px;
+            background: $lightGray;
+            border-radius: 50%;
+            margin-right: 6px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                .icon {
+                    transition: fill .5s ease-in;
+
+                    &--facebook {
+                        fill: $deepBlue;
+                    }
+
+                    &--twitter {
+                        fill: $turquoise;
+                    }
+
+                    &--google {
+                        fill: $dimRed;
+                    }
+                }
+            }
+        }
+
+        &-footer {
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            margin-right: 11px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-fb {
+            margin-right: 8px;
+        }
+
+        &-ball {
+            background: $dimGold;
+        }
+    }
+
+    &--subscribe {
+        width: 100%;
+        background: $dimGold;
+        padding: 7px 43px 7px 50px;
+    }
 }

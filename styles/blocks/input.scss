@@ -1,0 +1,10 @@
+.input {
+    &--email {
+        width: 100%;
+        padding: 10px 14px;
+        background: transparent;
+        letter-spacing: .05em;
+        @include placeholder(14px, $cloudyGray);
+        margin-bottom: 13px;
+    }
+}

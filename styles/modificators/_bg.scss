@@ -1,10 +1,14 @@
 .bg {
-    &--header {
+    &--dark-blue {
         background: $darkBlue;
     }
 
     &--title-sec {
         background: url("../img/bg-header.jpg") no-repeat;
         background-size: cover;
+    }
+
+    &--info {
+        background: $darkGray;
     }
 }

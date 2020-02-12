@@ -1,0 +1,29 @@
+.info {
+    padding: 71px 0 40px;
+
+    &__block {
+        width: 295px;
+
+        &--contact {
+            margin-left: 107px;
+        }
+
+        &--subscribe {
+            width: 300px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 17px;
+    }
+
+    &__adress {
+        max-width: 220px;
+        margin-bottom: 20px;
+        padding-top: 3px;
+    }
+
+    &__span {
+        line-height: 20px;
+    }
+}
